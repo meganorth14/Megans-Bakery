@@ -1,0 +1,384 @@
+/* Use Playfair Display as default font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Site-wide styles */
+*{
+    font-family:'Playfair Display', serif;
+}
+
+section {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.hidden{
+    display:none;
+}
+
+
+
+/* Buttons */
+.pink{
+    background-color: pink; 
+    border:none; 
+    border-radius: 5px;
+    color:black;
+    padding: 10px 20px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:15px;
+    margin:4px 2px;
+}
+button.pink:hover{
+    background-color: rgb(255, 116, 139);
+    color:white;
+}
+
+
+.grey{
+    background-color: lightgray; 
+    border:none; 
+    border-radius: 5px;
+    color:black;
+    padding: 10px 20px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:15px;
+    margin:4px 2px;
+}
+button.grey:hover{
+    background-color: darkgray;
+    color:white;
+}
+
+
+.blue{
+    background-color: #B8E0E8; 
+    border:2px solid #B8E0E8; 
+    border-radius: 5px;
+    color:black;
+    padding: 10px 20px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:15px;
+    margin:4px 2px;
+}
+button.blue:hover{
+    background-color: #328292;
+    color:white;
+}
+
+button.blue:active{
+    border:2px solid pink;
+}
+
+.cart {
+    background-color: white; 
+    border:white solid 1px; 
+    border-radius: 50%;
+    padding: 15px;
+    display: inline-block;
+    margin:10px;
+}
+button.cart:hover{
+    border:pink solid 1px;
+}
+
+.adjustbtn{
+    border: 1px solid #B8E0E8;
+    background-color:white;
+    border-radius: 5px;
+    color:black;
+    padding: 5px 10px;
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+    font-size:15px;
+    margin:10px;
+}
+.adjustbtn:hover{
+    background-color:#B8E0E8;
+}
+
+.cartbadge{
+    color:rgb(255, 116, 139);
+}
+
+.total{
+    display:inline;
+    margin-right:10px;
+    background-color: white;
+}
+
+.checkout{
+    position:fixed;
+    bottom:5%;
+    right:5%;
+}
+
+.editUser {
+    position:relative;
+    top:28%;
+    left:69%;
+}
+
+
+/* Links */
+a.account {
+    text-decoration: none;
+    color:black;
+    margin-right:5px;
+}
+
+a.account:hover {
+    text-decoration: none;
+    color:rgb(255, 116, 139);
+}
+
+a img:hover{
+    opacity:70%;
+}
+
+
+/* Home page */
+.imgframe {
+    position:relative;
+}
+
+.welcome{
+    position:absolute;
+    width:100%;
+    top:20%;
+    text-align: center;
+}
+
+img.arrow{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:40px;
+}
+
+/* Forms */
+small {
+    color:red;
+    text-align: center;
+}
+
+.loginpage {
+    background-image: url('../images/mockaroon-bzLhhI3MpYY-unsplash.jpg');
+    background-size:cover;
+    background-color: white;
+}
+
+.loginform {
+    width:60%;
+    background-color: white;
+    padding:1em;
+    border: pink solid 5px;
+    border-radius: 5px;
+    opacity:95%;
+    position:absolute;
+    left:20%;
+    top:10%;
+}
+
+.regform {
+    width:60%;
+    background-color: white;
+    padding:1em;
+    border: pink solid 5px;
+    border-radius: 5px;
+    opacity:95%;
+    position:absolute;
+    left:20%;
+    top:5%;
+}
+
+.accountform{
+    width:50%;
+    background-color: white;
+    padding:1em;
+    border: #B8E0E8 solid 5px;
+    border-radius: 5px;
+    position:absolute;
+    left:25%;
+    top:25%;
+}
+
+.loginitems {
+    padding:1em;
+}
+
+a.formlink{
+    text-decoration: none;
+    color:#10a4c2;
+    opacity: 100%;
+}
+
+
+/* Product page */
+.sticky{
+    position:sticky;
+    top:0%;
+    background-color: white;
+}
+
+section.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.gallery {
+    margin:5px;
+    width:30%;
+}
+
+div.desc{
+    padding:15px;
+    text-align: center;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+div.gallery img{
+    width:100%;
+    height:auto;
+}
+
+.pagination {
+  display: inline-block;
+  margin:30px;
+}
+
+.pagination a {
+  color: rgb(61, 61, 61);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #10a4c2;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/*  Cart  */
+.carttxt{
+    width:60%;
+    position:relative;
+    top:10%;
+    left:5%
+}
+
+div.carttxt p {
+    padding:15px;
+}
+
+.cartlist{
+    width:fit-content;
+    padding:15px;
+    text-align:center;
+}
+
+th{
+    font-size: x-large;
+    font-weight:900;
+}
+
+.cartlist th, td{
+    padding: 10px 30px;
+}
+
+.thumbnail{
+    width:60px;
+    margin-right:0%;
+    padding-right: 0%;
+}
+
+.success{
+
+    border:mediumspringgreen solid 2px;
+    border-radius: 5px;
+    color: rgb(0, 196, 121);
+    width:60%;
+    padding: 20px;
+    margin-left:20%;
+    text-align: center;
+}
+
+.failure {
+    border: tomato solid 2px;
+    border-radius: 5px;
+    color: tomato;
+    width:60%;
+    padding: 20px;
+    margin-left:20%;
+    text-align: center;
+}
+
+.historylist{
+    text-align: center;
+}
+
+.historylist div {
+    width:fit-content;
+    padding:3% 20%;
+    margin: 3% auto;
+    border: pink solid 1px;
+}
+
+/* Admin User List */
+.userInfo {
+    border: 2px solid #B8E0E8;
+    border-radius: 5px;
+    width:80%;
+    padding:3% 10%;
+    margin: 3% auto;
+}
+
+.userInfoTable {
+    width:100%;
+}
+
+#userlist div div{
+    border-top: 1px solid pink;
+}
+
+.orderlink{
+    border:none;
+    text-decoration: none;
+    background-color: white;
+}
+
+.orderlink:hover{
+    color:rgb(255, 116, 139);
+    text-decoration: underline;
+}
+
+.inventory{
+    width:fit-content;
+    position:relative;
+    left:5%;
+}
+
+.inventory td {
+    border-top: lightpink solid 1px;
+    padding:10px 30px;
+}
